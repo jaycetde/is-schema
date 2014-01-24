@@ -16,7 +16,7 @@ module.exports = isSchema;
 
 function isSchema(obj, schema, chain) {
     
-    chain = chain || is(obj);
+    chain = chain || is(obj, schema.name || null);
     
     if (typeof schema === 'string') schema = { type: schema };
     

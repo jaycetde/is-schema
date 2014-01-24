@@ -67,13 +67,30 @@ describe('isSchema', function () {
         var ret
           , schema = {
               type: 'string',
-              name: 'stringSchema'
+              nonsenseProperty: 'foobar'
           }
         ;
         
         ret = isSchema('cat', schema);
         
         ret.valid.should.be.true;
+        
+    });
+    
+    it('should use the property `name` as the variable name in the chain', function () {
+        
+        var ret
+          , schema = {
+              type: 'number',
+              name: 'Your age',
+              between: [18, 110]
+          }
+        ;
+        
+        ret = isSchema(12, schema);
+        
+        ret.valid.should.be.false;
+        ret.errorMessage.should.equal('Your age must be between 18 and 110');
         
     });
     
