@@ -1,0 +1,29 @@
+{
+  "name": "is-schema",
+  "version": "0.0.0",
+  "description": "Constrain a variable to a schema",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "fast-apply": "*",
+    "is-validation": "*"
+  },
+  "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayceTDE/is-schema.git"
+  },
+  "keywords": [
+    "schema constrain"
+  ],
+  "author": "Jayce Pulsipher <jaycemp@gmail.com>",
+  "license": "MIT"
+}
