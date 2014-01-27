@@ -1,6 +1,6 @@
 {
   "name": "is-schema",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Constrain a variable to a schema",
   "main": "index.js",
   "directories": {
